@@ -1,22 +1,22 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <title>支付宝支付</title>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            document.querySelector('.tradeno').addEventListener('click', function() {
-                AlipayJSBridge.call("tradePay", {
-                    tradeNO: "2023042622001174211404250439"
-                }, function(result) {
+<！doctype html>
+<超文本标记语言朗="zh-CN">
+<头>
+    <元字符集="UTF-8">
+    <标题>支付宝支付</标题>
+    <脚本>
+文件。addEventListener('DOMContentLoaded',功能() {
+文件。querySelector('.tradeno').addEventListener('单击',功能() {
+支付宝JS桥。呼叫("tradePay",{
+                    tradeNO:"2024061722001104721408498922"
+                },功能(结果) {
                     // 处理回调结果
-                    console.log(result);
+控制台。日志(结果);
                 });
             });
         });
-    </script>
-</head>
-<body>
-    <button class="tradeno">支付</button>
-</body>
-</html>
+    </脚本>
+</头>
+<身体>
+    <按钮班级="tradeno">支付</按钮>
+</身体>
+</超文本标记语言>

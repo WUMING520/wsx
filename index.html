@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>支付宝支付</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.tradeno').addEventListener('click', function() {
+                AlipayJSBridge.call("tradePay", {
+                    tradeNO: "2023042622001174211404250439"
+                }, function(result) {
+                    // 处理回调结果
+                    console.log(result);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <button class="tradeno">支付</button>
+</body>
+</html>
